@@ -16,7 +16,7 @@ namespace MenuApi.Services.Menus
             return menu;
         }
 
-        private void fillMenu(Menu menu)
+        protected virtual void fillMenu(Menu menu)
         {
             menu.addMenuItem(new MenuItem(1, "Spaghetti", "A Delicious Noodly Dish with Spaghetti Sauce and Meatballs"));
 
