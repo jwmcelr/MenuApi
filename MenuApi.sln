@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuApi", "MenuApi\MenuApi.csproj", "{118A1881-EFC6-4F79-B873-AE242099D8B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuApi", "MenuApi\MenuApi.csproj", "{118A1881-EFC6-4F79-B873-AE242099D8B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuApiTests", "MenuApiTests\MenuApiTests.csproj", "{CD455554-B0E8-41CE-8948-61510A61F6BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuApiTests", "MenuApiTests\MenuApiTests.csproj", "{CD455554-B0E8-41CE-8948-61510A61F6BF}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "MenuApiIntegrationTests", "MenuApiIntegrationTests\MenuApiIntegrationTests.njsproj", "{1587F642-8816-44A7-B6D6-16B0634BD4DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,9 @@ Global
 		{CD455554-B0E8-41CE-8948-61510A61F6BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD455554-B0E8-41CE-8948-61510A61F6BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD455554-B0E8-41CE-8948-61510A61F6BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1587F642-8816-44A7-B6D6-16B0634BD4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1587F642-8816-44A7-B6D6-16B0634BD4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1587F642-8816-44A7-B6D6-16B0634BD4DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
