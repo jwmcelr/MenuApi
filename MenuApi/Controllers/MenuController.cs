@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MenuApi.Domains.Menus;
+using MenuApi.Services.Menus;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,18 +10,20 @@ namespace MenuApi.Controllers
     [ApiController]
     public class MenuController : ControllerBase
     {
-        // GET: api/<MenuController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
+
+        IMenuService _menuService;
+
+        public MenuController(IMenuService menuService) {
+            _menuService = menuService;
         }
 
         // GET api/<MenuController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Menu Get(int id)
         {
-            return "value";
+            Menu menu = _menuService.getMenu(id);
+            return menu;
+            // return _menuService.getMenu(id);
         }
 
         // POST api/<MenuController>

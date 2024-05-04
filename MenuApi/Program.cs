@@ -1,3 +1,5 @@
+using MenuApi.Services.Menus;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +8,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Register Application Services
+builder.Services.AddSingleton<IMenuService, BasicMenuService>();
 
 var app = builder.Build();
 
