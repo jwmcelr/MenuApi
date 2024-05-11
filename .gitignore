@@ -3,6 +3,9 @@
 ##
 ## Get latest from `dotnet new gitignore`
 
+#compiled Typescript dist folders
+dist/
+
 # dotenv files
 .env
 
