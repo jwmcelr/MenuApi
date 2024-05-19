@@ -38,10 +38,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="features\" />
+    <Folder Include="features\support\" />
     <Folder Include="features\step_definitions\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="features\step_definitions\stepdefs.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="features\support\serenity.config.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
   </ItemGroup>
