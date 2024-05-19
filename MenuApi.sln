@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuApiTests", "MenuApiTest
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "MenuApiIntegrationTests", "MenuApiIntegrationTests\MenuApiIntegrationTests.njsproj", "{1587F642-8816-44A7-B6D6-16B0634BD4DA}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "MenuApiTSIntegrationTests", "MenuApiTSIntegrationTests\MenuApiTSIntegrationTests.njsproj", "{D809BEC1-07B9-46B3-BDE8-281B8B440EFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{1587F642-8816-44A7-B6D6-16B0634BD4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1587F642-8816-44A7-B6D6-16B0634BD4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1587F642-8816-44A7-B6D6-16B0634BD4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D809BEC1-07B9-46B3-BDE8-281B8B440EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D809BEC1-07B9-46B3-BDE8-281B8B440EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D809BEC1-07B9-46B3-BDE8-281B8B440EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D809BEC1-07B9-46B3-BDE8-281B8B440EFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
