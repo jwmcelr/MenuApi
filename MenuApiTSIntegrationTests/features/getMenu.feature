@@ -3,3 +3,4 @@ Feature: What's the menu?
     
     Scenario: Get the Menu
         Given the playwright menu is available
+        And I've looked at the items on it
