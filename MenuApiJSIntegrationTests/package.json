@@ -1,0 +1,26 @@
+{
+  "name": "menu-api-jsintegration-tests",
+  "version": "0.0.0",
+  "description": "MenuApiJSIntegrationTests",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@serenity-js/assertions": "^3.25.2",
+    "@serenity-js/console-reporter": "^3.25.2",
+    "@serenity-js/core": "^3.25.2",
+    "@serenity-js/cucumber": "^3.25.2",
+    "@serenity-js/rest": "^3.25.2",
+    "@serenity-js/serenity-bdd": "^3.25.2",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.21.0",
+    "playwright": "^1.45.2"
+  },
+  "eslintConfig": {},
+  "type": "module"
+}
