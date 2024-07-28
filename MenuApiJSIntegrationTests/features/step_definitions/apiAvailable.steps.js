@@ -16,3 +16,4 @@ Given('the playwright menu is available', async function () {
         Ensure.that(LastResponse.status(), equals(200)),  // 3) Verify response
     )
 });
+
