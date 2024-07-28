@@ -34,6 +34,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="features\getMenu.feature" />
+    <Content Include="features\step_definitions\apiAvailable.steps.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="features\step_definitions\stepdefs.js">
       <SubType>Code</SubType>
     </Content>
