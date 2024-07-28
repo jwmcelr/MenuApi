@@ -5,9 +5,11 @@ import { BrowseTheWebWithPlaywright } from '@serenity-js/playwright'
 
 import * as playwright from 'playwright'
 
-let browser: playwright.Browser;
+let browser;
 
 BeforeAll(async () => {
+
+    console.log("In serenity.config.ts BeforeAll");
 
     // Launch the browser once before all the tests
     // Serenity/JS will take care of managing Playwright browser context and browser tabs.
