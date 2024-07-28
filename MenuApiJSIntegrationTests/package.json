@@ -15,11 +15,12 @@
     "@serenity-js/console-reporter": "^3.25.2",
     "@serenity-js/core": "^3.25.2",
     "@serenity-js/cucumber": "^3.25.2",
+    "@serenity-js/playwright": "^3.25.3",
     "@serenity-js/rest": "^3.25.2",
     "@serenity-js/serenity-bdd": "^3.25.2",
     "dotenv": "^16.4.5",
     "eslint": "^8.21.0",
-    "playwright": "^1.45.2"
+    "playwright": "^1.45.3"
   },
   "eslintConfig": {},
   "type": "module"
