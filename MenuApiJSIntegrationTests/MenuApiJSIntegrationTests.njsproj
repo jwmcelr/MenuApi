@@ -37,7 +37,10 @@
     <Content Include="features\step_definitions\apiAvailable.steps.js">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="features\step_definitions\stepdefs.js">
+    <Content Include="features\step_definitions\menuInteraction.steps.js">
+      <SubType>Code</SubType>
+    </Content>
+	<Content Include="features\step_definitions\parameter.steps.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="features\support\serenity.config.js">
