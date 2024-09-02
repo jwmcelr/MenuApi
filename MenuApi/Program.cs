@@ -1,3 +1,4 @@
+using MenuApi.Repository;
 using MenuApi.Services.Menus;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,8 +10,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddSingleton<IMenuRepository, DB2MenuRepository>();
+
 // Register Application Services
-builder.Services.AddSingleton<IMenuService, BasicMenuService>();
+builder.Services.AddSingleton<IMenuService, DBDrivenMenuService>();
+
 
 var app = builder.Build();
 
