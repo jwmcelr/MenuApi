@@ -1,0 +1,24 @@
+-- to run from ORACLE_HOME/Bin folder:
+-- db2 -tvf "C:\work\repositories\MenuApi\MenuApi\scripts\db\db2\createMenuDB.sql"
+
+-- sqlplus / as sysdba
+-- alter session set container = FREEPDB1;
+-- CREATE USER TEST IDENTIFIED BY test1234;
+
+-- CREATE TABLESPACE tbs_01 DATAFILE 'tbs_f1.dbf' SIZE 40M ONLINE; 
+
+-- ALTER USER TEST default TABLESPACE tbs_01;
+-- ALTER USER TEST QUOTA 10M ON tbs_01;
+-- GRANT CREATE SESSION  TO TEST;
+-- GRANT CREATE TABLE to TEST;
+
+-- sqlplus TEST/test1234@localhost:1521/FREEPDB1
+
+-- Create MENU Schema
+DROP TABLE MENU.MENU;
+DROP TABLE MENU.MENU_ITEM;
+DROP SCHEMA MENU;
+CREATE SCHEMA MENU AUTHORIZATION TEST;
+
+CREATE TABLE TEST.MENU (ID NUMBER NOT NULL, NAME VARCHAR2(30));
+INSERT INTO TEST.MENU VALUES(1, 'test');
