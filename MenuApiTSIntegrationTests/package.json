@@ -9,7 +9,8 @@
   "scripts": {
     "build": "tsc --build",
     "clean": "tsc --build --clean",
-    "test": "tsc && cucumber-js"
+    "test": "tsc && cucumber-js",
+    "specmatic": "npx specmatic stub ./specmatic/service.yaml"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^10.7.0",
@@ -26,6 +27,7 @@
     "eslint": "^8.21.0",
     "pactum": "^3.6.8",
     "playwright": "^1.44.0",
+    "specmatic": "^2.0.34",
     "typescript": "^4.9.5"
   },
   "eslintConfig": {

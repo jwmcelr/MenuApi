@@ -9,7 +9,9 @@ namespace MenuApi.Services.Menus
 
         private static HttpClient sharedClient = new()
         {
-            BaseAddress = new Uri("https://my-json-server.typicode.com/znsio/specmatic-documentation/"),
+            // BaseAddress = new Uri("https://my-json-server.typicode.com/znsio/specmatic-documentation/"),
+
+            BaseAddress = new Uri("http://localhost:9000/"),
         };
 
         
