@@ -7,7 +7,7 @@ namespace MenuApi.Services.Menus
     public interface IMenuService
     {
 
-        Menu getMenu(int id);
+        Task<Menu> getMenu(int id);
 
     }
 }

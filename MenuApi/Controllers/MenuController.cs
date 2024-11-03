@@ -19,9 +19,9 @@ namespace MenuApi.Controllers
 
         // GET api/<MenuController>/5
         [HttpGet("{id}")]
-        public Menu Get(int id)
+        public async Task<Menu> Get(int id)
         {
-            Menu menu = _menuService.getMenu(id);
+            Menu menu = await _menuService.getMenu(id);
             return menu;
             // return _menuService.getMenu(id);
         }
