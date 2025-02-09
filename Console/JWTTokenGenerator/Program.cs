@@ -5,6 +5,6 @@ Console.WriteLine("Hello, World!");
 
 JWTGenerator generator = new JWTGenerator();
 
-generator.generateJWTToken("C:\\work\\temp\\DB2Certificate.p12", "testdb2", "CN=testcert");
+generator.generateJWTToken("C:\\work\\temp\\DB2CertificateServer.p12", "testdb2", "CN=mytestcert");
 
 

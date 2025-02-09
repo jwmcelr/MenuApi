@@ -39,13 +39,14 @@ namespace JWTTokenGenerator
                 // Create signing credentials
                 var signingCredentials = new SigningCredentials(rsaSecurityKey, SecurityAlgorithms.RsaSha256);
 
+
                 var token = new JwtSecurityToken(
-                    issuer: "yourissuer",
+                    issuer: "CompanyX",
                     audience: "youraudience",
                     claims: new[] {
-                      new Claim("sub", "user1")
+                      new Claim("username", "test")
                     },
-                    expires: DateTime.Now.AddMinutes(30),
+                    expires: DateTime.Now.AddDays(365),
                     signingCredentials: signingCredentials);
 
                 var jwtToken = new JwtSecurityTokenHandler().WriteToken(token);
