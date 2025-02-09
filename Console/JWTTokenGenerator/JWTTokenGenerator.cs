@@ -74,6 +74,37 @@ namespace JWTTokenGenerator
 
             return "test";
         }
+
+        public bool ValidateToken(string token, string certificateFilePath, string password, string signingCertSubjectName)
+        {
+            var certificate2Collection = new X509Certificate2Collection();
+            certificate2Collection.Import(certificateFilePath, password, X509KeyStorageFlags.DefaultKeySet);
+            var cert2 = certificate2Collection.Find(X509FindType.FindBySubjectName, signingCertSubjectName, false);
+
+            if (cert2 == null || cert2.Count == 0) return false;
+
+            var rsaSecurityKey = new RsaSecurityKey(cert2[0].GetRSAPublicKey());
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var validationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidIssuer = "CompanyX",
+                ValidateAudience = true,
+                ValidAudience = "youraudience",
+                ValidateLifetime = true,
+                IssuerSigningKey = rsaSecurityKey
+            };
+
+            try
+            {
+                tokenHandler.ValidateToken(token, validationParameters, out _);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
         
     }
 }
